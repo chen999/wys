@@ -1,0 +1,716 @@
+@charset "utf-8";
+/*初始化*/
+/* line 3, http://127.0.0.1:8020/fwys/less/wys.less */
+body,
+header,
+footer,
+aside,
+nav,
+section,
+article,
+div,
+span,
+i,
+b,
+em,
+strong,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+ul,
+li,
+input,
+select,
+textarea,
+option,
+button,
+th,
+td,
+dl,
+dt,
+dd,
+p,
+form,
+ol,
+label {
+  margin: 0;
+  padding: 0;
+}
+/* line 8, http://127.0.0.1:8020/fwys/less/wys.less */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: normal;
+}
+/* line 13, http://127.0.0.1:8020/fwys/less/wys.less */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* line 18, http://127.0.0.1:8020/fwys/less/wys.less */
+li {
+  list-style: none;
+}
+/* line 22, http://127.0.0.1:8020/fwys/less/wys.less */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  border: 0;
+  background: none;
+  -webkit-appearance: none;
+  outline: none;
+}
+/* line 32, http://127.0.0.1:8020/fwys/less/wys.less */
+a {
+  -webkit-touch-callout: none;
+  text-decoration: none;
+  color: #333;
+  outline: none;
+}
+/* line 39, http://127.0.0.1:8020/fwys/less/wys.less */
+a:hover {
+  color: #333;
+}
+/* line 43, http://127.0.0.1:8020/fwys/less/wys.less */
+em,
+i {
+  font-style: normal;
+}
+/* line 47, http://127.0.0.1:8020/fwys/less/wys.less */
+em {
+  color: #333;
+}
+/* line 51, http://127.0.0.1:8020/fwys/less/wys.less */
+img {
+  border: 0 none;
+  vertical-align: top;
+}
+/* line 56, http://127.0.0.1:8020/fwys/less/wys.less */
+html {
+  font-size: 6.25rem;
+}
+/* line 60, http://127.0.0.1:8020/fwys/less/wys.less */
+body {
+  font-family: "microsoft yahei";
+  color: #333;
+  font-size: 0.3rem;
+  margin: 0 auto;
+  background: #f5f5f5;
+}
+/* line 68, http://127.0.0.1:8020/fwys/less/wys.less */
+.clearfix {
+  zoom: 1;
+}
+/* line 72, http://127.0.0.1:8020/fwys/less/wys.less */
+.clearfix:after {
+  content: '.';
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  display: block;
+}
+/* line 133, http://127.0.0.1:8020/fwys/less/wys.less */
+.singleE {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+/* line 139, http://127.0.0.1:8020/fwys/less/wys.less */
+#header {
+  position: relative;
+  width: 100%;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  border-bottom: #8a2e14 0.01rem solid;
+  box-sizing: border-box;
+  background: #aa3919;
+  font-size: 0.36rem;
+  color: #fff;
+  text-align: center;
+}
+/* line 146, http://127.0.0.1:8020/fwys/less/wys.less */
+#header i {
+  position: absolute;
+  top: 0.28rem;
+  left: 0.31rem;
+  width: 0.2rem;
+  height: 0.32rem;
+  line-height: 0.32rem;
+  background: url('/wys/img/coins.png') 0 0 no-repeat;
+  background-size: 1.2rem;
+}
+/* line 156, http://127.0.0.1:8020/fwys/less/wys.less */
+.common-list {
+  margin-top: 0.24rem;
+  border-bottom: #e6e6e6 0.01rem solid;
+  border-top: #e6e6e6 0.01rem solid;
+  box-sizing: border-box;
+  background: #fff;
+}
+/* line 161, http://127.0.0.1:8020/fwys/less/wys.less */
+.common-list li {
+  width: auto;
+  height: 0.87rem;
+  line-height: 0.87rem;
+  border-bottom: #e6e6e6 0.01rem solid;
+  box-sizing: border-box;
+}
+/* line 165, http://127.0.0.1:8020/fwys/less/wys.less */
+.common-list li:last-child {
+  border-bottom: transparent 0.01rem solid;
+  box-sizing: border-box;
+}
+/* line 170, http://127.0.0.1:8020/fwys/less/wys.less */
+.btn {
+  position: absolute;
+  left: 50%;
+  width: 95%;
+  height: 0.8rem;
+  margin-left: -47.5%;
+  margin-top: -0.4rem;
+  border-radius: 0.08rem;
+  background: #aa3919;
+  font-size: 0.36rem;
+  color: #fff;
+  line-height: 0.8rem;
+  text-align: center;
+}
+/* line 179, http://127.0.0.1:8020/fwys/less/wys.less */
+.btn-two {
+  position: absolute;
+  left: 50%;
+  width: 92%;
+  height: 0.8rem;
+  margin-left: -46%;
+  margin-top: -0.4rem;
+}
+/* line 181, http://127.0.0.1:8020/fwys/less/wys.less */
+.btn-two .next,
+.btn-two .back {
+  width: 45%;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.36rem;
+  color: #fff;
+  border-radius: 0.08rem;
+  text-align: center;
+}
+/* line 187, http://127.0.0.1:8020/fwys/less/wys.less */
+.btn-two .next {
+  float: left;
+  background: #aa3919;
+}
+/* line 191, http://127.0.0.1:8020/fwys/less/wys.less */
+.btn-two .back {
+  float: right;
+  background: #999999;
+}
+/*userMsg*/
+/* line 198, http://127.0.0.1:8020/fwys/less/wys.less */
+.form-list {
+  padding-left: 0.3rem;
+}
+/* line 200, http://127.0.0.1:8020/fwys/less/wys.less */
+.form-list li {
+  position: relative;
+}
+/* line 203, http://127.0.0.1:8020/fwys/less/wys.less */
+.form-list .star {
+  position: absolute;
+  top: 0;
+  left: -0.2rem;
+  color: #aa3919;
+}
+/* line 209, http://127.0.0.1:8020/fwys/less/wys.less */
+.form-list .title {
+  float: left;
+  width: 25%;
+}
+/* line 213, http://127.0.0.1:8020/fwys/less/wys.less */
+.form-list lable:not(.title) {
+  font-size: 0.26rem;
+  color: #666666;
+}
+/* line 217, http://127.0.0.1:8020/fwys/less/wys.less */
+.form-list .radio i {
+  display: inline-block;
+  background: url('/wys/img/coins.png') no-repeat 0.1rem;
+  background-size: 1.2rem;
+}
+/* line 222, http://127.0.0.1:8020/fwys/less/wys.less */
+.form-list .radio .radio-check {
+  width: 0.3rem;
+  height: 0.3rem;
+  line-height: 0.3rem;
+  margin: 0 0.22rem 0 0.08rem;
+  background-position: -0.35rem -0.42rem;
+}
+/* line 227, http://127.0.0.1:8020/fwys/less/wys.less */
+.form-list .radio .current {
+  background-position-x: 0;
+}
+/* line 230, http://127.0.0.1:8020/fwys/less/wys.less */
+.form-list .radio .male,
+.form-list .radio .famale {
+  width: 0.22rem;
+  height: 0.3rem;
+  line-height: 0.3rem;
+  margin-left: 0.16rem;
+  background-position-y: -0.8rem;
+}
+/* line 235, http://127.0.0.1:8020/fwys/less/wys.less */
+.form-list .radio .male {
+  background-position-x: 0;
+}
+/* line 238, http://127.0.0.1:8020/fwys/less/wys.less */
+.form-list .radio .famale {
+  background-position-x: -0.27rem;
+}
+/* line 242, http://127.0.0.1:8020/fwys/less/wys.less */
+.form-list .sex-check {
+  margin-right: 0.66rem;
+}
+/* line 243, http://127.0.0.1:8020/fwys/less/wys.less */
+.form-list .marriage-check {
+  margin-right: 0.76rem;
+}
+/* line 244, http://127.0.0.1:8020/fwys/less/wys.less */
+.form-list .time-check {
+  margin-right: 0.5rem;
+}
+/* line 247, http://127.0.0.1:8020/fwys/less/wys.less */
+.user-msg-btn {
+  margin-top: 0.87rem;
+}
+/*userAppoint*/
+/* line 252, http://127.0.0.1:8020/fwys/less/wys.less */
+.appoint-list {
+  padding-left: 0.9rem;
+}
+/* line 254, http://127.0.0.1:8020/fwys/less/wys.less */
+.appoint-list li {
+  position: relative;
+  padding-left: 0.15rem;
+}
+/* line 258, http://127.0.0.1:8020/fwys/less/wys.less */
+.appoint-list i {
+  position: absolute;
+  left: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-left: -0.25rem;
+  margin-top: -0.25rem;
+  top: 50%;
+  left: -0.45rem;
+  background: url('/wys/img/userAppoint-coins.png') no-repeat;
+  background-size: 0.8rem;
+}
+/* line 265, http://127.0.0.1:8020/fwys/less/wys.less */
+.appoint-list a {
+  display: block;
+  color: #666666;
+}
+/* line 269, http://127.0.0.1:8020/fwys/less/wys.less */
+.appoint-list .select-title {
+  float: right;
+  margin-right: 0.4rem;
+  font-size: 0.26rem;
+  color: #f1a122;
+}
+/* line 274, http://127.0.0.1:8020/fwys/less/wys.less */
+.appoint-list img {
+  float: right;
+  width: 0.2rem;
+  height: 0.3rem;
+  line-height: 0.87rem;
+  margin: 0.28rem 0.22rem 0 0;
+}
+/* line 281, http://127.0.0.1:8020/fwys/less/wys.less */
+.appoint-btn {
+  margin-top: 2.67rem;
+}
+/*olderRest*/
+/* line 287, http://127.0.0.1:8020/fwys/less/wys.less */
+.rest-list li {
+  width: auto;
+  height: 1.84rem;
+  line-height: 1.84rem;
+}
+/* line 290, http://127.0.0.1:8020/fwys/less/wys.less */
+.rest-list i {
+  float: left;
+  width: 0.5rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  margin: 0.66rem 0.37rem 0 0.3rem;
+  background: url('/wys/img/coins.png') no-repeat 0 -1.2rem;
+  background-size: 1.2rem;
+}
+/* line 297, http://127.0.0.1:8020/fwys/less/wys.less */
+.rest-list .intro {
+  position: relative;
+  float: left;
+  width: 80%;
+  height: 100%;
+  line-height: 100%;
+}
+/* line 302, http://127.0.0.1:8020/fwys/less/wys.less */
+.rest-list h3 {
+  margin-top: 0.16rem;
+  color: #333;
+  line-height: 0.44rem;
+}
+/* line 307, http://127.0.0.1:8020/fwys/less/wys.less */
+.rest-list dt {
+  font-size: 0.26rem;
+  color: #333;
+  line-height: 0.44rem;
+}
+/* line 311, http://127.0.0.1:8020/fwys/less/wys.less */
+.rest-list dd {
+  font-size: 0.26rem;
+  color: #999999;
+  height: 0.6rem;
+  line-height: 0.3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+}
+/* line 315, http://127.0.0.1:8020/fwys/less/wys.less */
+.rest-list button {
+  position: absolute;
+  top: 0.24rem;
+  right: 0;
+  width: 1.36rem;
+  height: 0.46rem;
+  line-height: 0.46rem;
+  border: 0.02rem solid #aa3919;
+  border-radius: 0.08rem;
+  font-size: 0.26rem;
+  color: #aa3919;
+}
+/* line 324, http://127.0.0.1:8020/fwys/less/wys.less */
+.rest-list .current i {
+  background-position-x: -0.55rem;
+}
+/* line 329, http://127.0.0.1:8020/fwys/less/wys.less */
+.rest-info {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+/* line 334, http://127.0.0.1:8020/fwys/less/wys.less */
+.rest-info .package-item {
+  position: absolute;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  margin-left: -40%;
+  margin-top: -40%;
+  top: 0.88rem;
+  margin-top: 0;
+  background: #fff;
+  border-radius: 0.08rem;
+}
+/* line 340, http://127.0.0.1:8020/fwys/less/wys.less */
+.rest-info .package-item .head-title {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 0.67rem;
+  line-height: 0.67rem;
+  border-bottom: #e6e6e6 0.01rem solid;
+  box-sizing: border-box;
+}
+/* line 345, http://127.0.0.1:8020/fwys/less/wys.less */
+.rest-info .package-item .head-title i {
+  float: left;
+  width: 0.34rem;
+  height: 0.34rem;
+  line-height: 0.34rem;
+  margin: 0.17rem 0.16rem 0 0.2rem;
+  background: url('/wys/img/olderRest-coins.png') no-repeat;
+  background-size: 1rem;
+}
+/* line 353, http://127.0.0.1:8020/fwys/less/wys.less */
+.rest-info .package-item .del {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0.4rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  background: url('/wys/img/olderRest-coins.png') no-repeat 0 -0.4rem;
+  background-size: 1rem;
+  cursor: pointer;
+}
+/* line 362, http://127.0.0.1:8020/fwys/less/wys.less */
+.rest-info .package-item .item-list {
+  position: absolute;
+  top: 0.67rem;
+  bottom: 0.61rem;
+  font-size: 0.28rem;
+  overflow-y: scroll;
+}
+/* line 368, http://127.0.0.1:8020/fwys/less/wys.less */
+.rest-info .package-item .item-list li {
+  padding: 0.19rem 0.26rem 0.2rem 0.3rem;
+  border-bottom: #e6e6e6 0.01rem solid;
+  box-sizing: border-box;
+}
+/* line 372, http://127.0.0.1:8020/fwys/less/wys.less */
+.rest-info .package-item .item-list h3 {
+  line-height: 0.4rem;
+}
+/* line 375, http://127.0.0.1:8020/fwys/less/wys.less */
+.rest-info .package-item .item-list dl {
+  padding-left: 0.34rem;
+}
+/* line 378, http://127.0.0.1:8020/fwys/less/wys.less */
+.rest-info .package-item .item-list dt {
+  line-height: 0.54rem;
+  color: #666666;
+}
+/* line 382, http://127.0.0.1:8020/fwys/less/wys.less */
+.rest-info .package-item .item-list dd {
+  font-size: 0.26rem;
+  color: #999999;
+  height: 1.2rem;
+  line-height: 0.3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+}
+/* line 387, http://127.0.0.1:8020/fwys/less/wys.less */
+.rest-info .package-item .bot {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0.61rem;
+  line-height: 0.61rem;
+  border-top: #e6e6e6 0.01rem solid;
+  box-sizing: border-box;
+  border-radius: 0 0 0.08rem 0.08rem;
+  background: #e0e0e0;
+  font-size: 0.22rem;
+}
+/* line 395, http://127.0.0.1:8020/fwys/less/wys.less */
+.rest-info .package-item .bot li {
+  float: left;
+}
+/* line 398, http://127.0.0.1:8020/fwys/less/wys.less */
+.rest-info .package-item .bot .tel {
+  margin-left: 0.1rem;
+  float: left;
+}
+/* line 401, http://127.0.0.1:8020/fwys/less/wys.less */
+.rest-info .package-item .bot .email {
+  margin-right: 0.1rem;
+  float: right;
+}
+/* line 404, http://127.0.0.1:8020/fwys/less/wys.less */
+.rest-info .package-item .bot i {
+  float: left;
+  width: 0.36rem;
+  height: 0.3rem;
+  line-height: 0.3rem;
+  margin: 0.16rem 0.2rem 0 0;
+  background: url('/wys/img/olderRest-coins.png') no-repeat;
+  background-position-y: -0.9rem;
+  background-size: 1rem;
+}
+/* line 412, http://127.0.0.1:8020/fwys/less/wys.less */
+.rest-info .package-item .bot .email i {
+  background-position-x: -0.4rem;
+}
+/*testTool*/
+/* line 421, http://127.0.0.1:8020/fwys/less/wys.less */
+.tool-list {
+  padding: 0 0.4rem;
+}
+/* line 423, http://127.0.0.1:8020/fwys/less/wys.less */
+.tool-list li {
+  width: 45%;
+  margin-top: 0.3rem;
+  padding: 0.4rem 0;
+  border: 0.02rem solid;
+  border-radius: 0.1rem;
+}
+/* line 430, http://127.0.0.1:8020/fwys/less/wys.less */
+.tool-list li:nth-child(2n+1) {
+  float: left;
+}
+/* line 433, http://127.0.0.1:8020/fwys/less/wys.less */
+.tool-list li:nth-child(2n) {
+  float: right;
+}
+/* line 436, http://127.0.0.1:8020/fwys/less/wys.less */
+.tool-list i {
+  display: block;
+  width: 1rem;
+  height: 0.9rem;
+  line-height: 0.9rem;
+  margin: 0 auto 0.2rem;
+  background: url('/wys/img/testTool-coins.png') no-repeat;
+  background-size: 1.2rem;
+}
+/* line 443, http://127.0.0.1:8020/fwys/less/wys.less */
+.tool-list h3 {
+  line-height: 0.4rem;
+  text-align: center;
+}
+/* line 449, http://127.0.0.1:8020/fwys/less/wys.less */
+.tool-btn {
+  margin-top: 1.22rem;
+}
+/*psyTestIndex*/
+/* line 454, http://127.0.0.1:8020/fwys/less/wys.less */
+.test-index-main {
+  margin-top: 0.26rem;
+  padding: 0 0.2rem;
+}
+/* line 457, http://127.0.0.1:8020/fwys/less/wys.less */
+.test-index-main img {
+  width: 100%;
+}
+/* line 462, http://127.0.0.1:8020/fwys/less/wys.less */
+.test-index-btn {
+  margin-top: 0.77rem;
+}
+/*psyMsg*/
+/* line 467, http://127.0.0.1:8020/fwys/less/wys.less */
+.psy-msg-btn {
+  margin-top: 0.41rem;
+}
+/*psyQues*/
+/* line 472, http://127.0.0.1:8020/fwys/less/wys.less */
+.ques-list {
+  padding: 0.29rem 0.18rem 0;
+}
+/* line 474, http://127.0.0.1:8020/fwys/less/wys.less */
+.ques-list li {
+  border: 0.02rem #e6e6e6 solid;
+  border-radius: 0.1rem;
+  margin-bottom: 0.4rem;
+}
+/* line 479, http://127.0.0.1:8020/fwys/less/wys.less */
+.ques-list h3 {
+  margin: 0 0.2rem;
+  padding-left: 0.07rem;
+  border-bottom: #e6e6e6 0.01rem solid;
+  box-sizing: border-box;
+  line-height: 0.68rem;
+}
+/* line 485, http://127.0.0.1:8020/fwys/less/wys.less */
+.ques-list .op {
+  padding: 0 0.24rem 0.22rem;
+  font-size: 0.26rem;
+  color: #666666;
+}
+/* line 488, http://127.0.0.1:8020/fwys/less/wys.less */
+.ques-list .op .radio {
+  display: inline-block;
+  width: 30%;
+  height: 0.56rem;
+  line-height: 0.56rem;
+  margin: 0.24rem 1% 0.02rem;
+  border: 0.02rem #e6e6e6 solid;
+  border-radius: 0.05rem;
+  text-align: center;
+}
+/* line 496, http://127.0.0.1:8020/fwys/less/wys.less */
+.ques-list .op .radio:nth-child(3n+1) {
+  margin-left: 0;
+}
+/* line 499, http://127.0.0.1:8020/fwys/less/wys.less */
+.ques-list .op .current {
+  border-color: #aa3919;
+  color: #aa3919;
+}
+/*msgConfirm*/
+/* line 508, http://127.0.0.1:8020/fwys/less/wys.less */
+.confirm-msg-list {
+  padding: 0 0.24rem;
+  margin-top: 0.24rem;
+  background: #fff;
+  border-top: #e6e6e6 0.01rem solid;
+  border-bottom: #e6e6e6 0.01rem solid;
+  box-sizing: border-box;
+}
+/* line 514, http://127.0.0.1:8020/fwys/less/wys.less */
+.confirm-msg-list li {
+  width: 50%;
+  line-height: 0.78rem;
+}
+/* line 518, http://127.0.0.1:8020/fwys/less/wys.less */
+.confirm-msg-list li:nth-child(2n+1) {
+  float: left;
+}
+/* line 521, http://127.0.0.1:8020/fwys/less/wys.less */
+.confirm-msg-list li:nth-child(2n) {
+  float: right;
+}
+/* line 524, http://127.0.0.1:8020/fwys/less/wys.less */
+.confirm-msg-list .title {
+  margin-right: 0.26rem;
+}
+/* line 527, http://127.0.0.1:8020/fwys/less/wys.less */
+.confirm-msg-list span {
+  color: #999999;
+}
+/* line 533, http://127.0.0.1:8020/fwys/less/wys.less */
+.confirm-list li {
+  margin-right: 0.3rem;
+}
+/* line 536, http://127.0.0.1:8020/fwys/less/wys.less */
+.confirm-list .title {
+  width: auto;
+}
+/* line 539, http://127.0.0.1:8020/fwys/less/wys.less */
+.confirm-list span {
+  float: right;
+  color: #999999;
+}
+/* line 543, http://127.0.0.1:8020/fwys/less/wys.less */
+.confirm-list .special {
+  color: #f1a122;
+}
+/* line 548, http://127.0.0.1:8020/fwys/less/wys.less */
+.appoint-msg-title {
+  margin-left: 0.3rem;
+  line-height: 0.54rem;
+  font-size: 0.24rem;
+  color: #999999;
+}
+/* line 554, http://127.0.0.1:8020/fwys/less/wys.less */
+.appoint-msg-list {
+  margin-top: 0;
+}
+/* line 556, http://127.0.0.1:8020/fwys/less/wys.less */
+.appoint-msg-list span {
+  color: #f1a122;
+}
+/* line 561, http://127.0.0.1:8020/fwys/less/wys.less */
+.confirm-btn {
+  margin-top: 0.31rem;
+}

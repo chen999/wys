@@ -1,0 +1,563 @@
+@charset "utf-8";
+/*初始化*/
+body, header, footer, aside, nav, section, article, div, span, i, b, em, strong, img, h1, h2, h3, h4, h5, h6, a, ul, li, input, select, textarea, option, button, th, td, dl, dt, dd, p, form, ol, label {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: normal;
+}
+
+table {
+    border-collapse: collapse;//合并边框
+    border-spacing: 0;
+}
+
+li {
+    list-style: none;
+}
+
+input, button, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    border: 0;
+    background: none;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+a {
+    -webkit-touch-callout:none;
+    text-decoration: none;
+    color: @fontCol;
+    outline:none;
+}
+
+a:hover {
+    color: @fontCol;
+}
+
+em,i {
+    font-style: normal;
+}
+
+em {
+    color: @fontCol;
+}
+
+img {
+    border: 0 none;
+    vertical-align: top;
+}
+
+html { 
+    font-size:6.25rem;
+}
+
+body {
+    font-family: "microsoft yahei";
+    color: @fontCol;
+    font-size: 0.3rem;
+    margin: 0 auto;
+    background: @bgCol;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: '.';
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    display: block;
+}
+
+@bgCol:#f5f5f5;
+@bdCol:#e6e6e6;
+@subCol:#fff;
+@fontCol:#333;
+@spCol:#aa3919;
+
+.wh(@w,@h:auto,@lh:@h){
+    width: @w;
+    height: @h;
+    line-height: @lh;
+}
+.border(bottom,@color:@bdCol,@width:0.01rem,@style:solid){
+    border-bottom:@arguments;
+}
+.border(top,@color:@bdCol,@width:0.01rem,@style:solid){
+    border-top:@arguments;
+}
+.border(@_,@color:@bdCol,@width:0.01rem,@style:solid){
+    box-sizing: border-box;
+}
+.font(@size,@color:@fontCol){
+    font-size: @size;
+    color: @color;
+}
+.float(left,@w){
+    margin-left: @w;
+}
+.float(right,@w){
+    margin-right: @w;
+}
+.float(@_,@w){
+    float: @_;
+}
+
+.jz(@w,@h){//居中
+    position: absolute;
+    left: 50%;
+    width: @w;
+    height: @h;
+    margin-left: -@w/2;
+    margin-top: -@h/2;
+}
+
+.mulE(@lh,@num){//多行文本省略
+    height: @lh*@num;
+    line-height: @lh;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: @num;
+    display: -webkit-box;
+}
+
+.singleE {//单行文本省略
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#header{
+    position: relative;
+    .wh(100%,0.88rem);
+    .border(bottom,#8a2e14);
+    background: @spCol;
+    .font(0.36rem,@subCol);    
+    text-align: center;
+    i{
+        position: absolute;
+        top: 0.28rem;
+        left: 0.31rem;
+        .wh(0.2rem,0.32rem);
+        background: url('/wys/img/coins.png') 0 0 no-repeat;
+        background-size: 1.2rem;
+    }
+}
+
+.common-list{
+    margin-top: 0.24rem;
+    .border(bottom);
+    .border(top);
+    background: @subCol;
+    li{
+        .wh(auto,0.87rem);
+        .border(bottom);
+    }
+    li:last-child{
+        .border(bottom,transparent);
+    }
+}
+
+.btn{
+    .jz(95%,0.8rem);
+    border-radius: 0.08rem;
+    background: @spCol;
+    .font(0.36rem,@subCol);
+    line-height: 0.8rem;//新增
+    text-align: center;//新增
+}
+
+.btn-two{
+    .jz(92%,0.8rem);
+    .next,.back{
+        .wh(45%,0.8rem);
+        .font(0.36rem,@subCol);
+        border-radius: 0.08rem;
+        text-align: center;//新增
+    }
+    .next{
+        float: left;
+        background: @spCol;
+    }
+    .back{
+        float: right;
+        background: @fontCol*3;
+    }
+}
+
+/*userMsg*/
+.form-list{
+    padding-left: 0.3rem;
+    li{
+        position: relative;
+    }
+    .star{
+        position: absolute;
+        top: 0;
+        left: -0.2rem;
+        color: @spCol;
+    }
+    .title{
+        float: left;
+        width: 25%;
+    }
+    lable:not(.title){
+        .font(0.26rem,@fontCol*2);
+    }    
+    .radio{
+        i{
+            display: inline-block;         
+            background: url('/wys/img/coins.png') no-repeat 0.1rem;
+            background-size: 1.2rem;            
+        }
+        .radio-check{
+            .wh(0.3rem,0.3rem);
+            margin: 0 0.22rem 0 0.08rem;
+            background-position: -0.35rem -0.42rem;
+        }
+        .current{
+            background-position-x: 0;
+        }
+        .male,.famale{
+            .wh(0.22rem,0.3rem);
+            margin-left: 0.16rem;
+            background-position-y: -0.80rem;
+        }
+        .male{
+            background-position-x: 0;
+        }
+        .famale{
+            background-position-x: -0.27rem ;
+        }        
+    }
+    .sex-check{ margin-right: 0.66rem;}
+    .marriage-check{ margin-right: 0.76rem;}
+    .time-check{ margin-right: 0.5rem;}
+}
+
+.user-msg-btn{
+    margin-top: 0.87rem;
+}
+
+/*userAppoint*/
+.appoint-list{
+    padding-left: 0.9rem;
+    li{
+        position: relative;
+        padding-left: 0.15rem;
+    }
+    i{
+        .jz(0.5rem,0.5rem);
+        top: 50%;
+        left: -0.45rem;
+        background: url('/wys/img/userAppoint-coins.png') no-repeat;
+        background-size: 0.8rem;
+    }
+    a{
+        display: block;
+        color: @fontCol*2;
+    }
+    .select-title{
+        float: right;
+        margin-right: 0.4rem;
+        .font(0.26rem,#f1a122);
+    }
+    img{
+        float: right;
+        .wh(0.2rem,0.3rem,0.87rem);
+        margin: 0.28rem 0.22rem 0 0;
+    }
+}
+
+.appoint-btn{
+    margin-top: 2.67rem;
+}
+
+/*olderRest*/
+.rest-list{
+    li{
+        .wh(auto,1.84rem);
+    }
+    i{
+        float: left;
+        .wh(0.5rem,0.5rem);
+        margin: 0.66rem 0.37rem 0 0.3rem;
+        background: url('/wys/img/coins.png') no-repeat 0 -1.2rem;
+        background-size: 1.2rem;
+    }
+    .intro{
+        position: relative;
+        float: left;
+        .wh(80%,100%);
+    }
+    h3{
+        margin-top: 0.16rem;
+        color: @fontCol;
+        line-height: 0.44rem;
+    }
+    dt{
+        .font(0.26rem,@fontCol);
+        line-height: 0.44rem;
+    }
+    dd{
+        .font(0.26rem,@fontCol*3);
+        .mulE(0.3rem,2);
+    }
+    button{
+        position: absolute;
+        top: 0.24rem;
+        right: 0;
+        .wh(1.36rem,0.46rem);
+        border:0.02rem solid @spCol;
+        border-radius: 0.08rem;
+        .font(0.26rem,@spCol);
+    }
+    .current i{
+        background-position-x: -0.55rem;
+    }
+}
+
+.rest-info{
+    position: fixed;
+    top: 0;
+    .wh(100%,100%);
+    background: rgba(0,0,0,0.4);
+    .package-item{
+        .jz(80%,80%);
+        top: 0.88rem;
+        margin-top: 0;
+        background: @subCol;
+        border-radius: 0.08rem;
+        .head-title{
+            position: absolute;
+            top: 0;
+            .wh(100%,0.67rem);
+            .border(bottom);
+            i{
+                float: left;
+                .wh(0.34rem,0.34rem);
+                margin: 0.17rem 0.16rem 0 0.2rem;
+                background: url('/wys/img/olderRest-coins.png') no-repeat;
+                background-size: 1rem;
+            }            
+        }
+        .del{
+            position: absolute;
+            top: 0;
+            right: 0;
+            .wh(0.4rem,0.4rem);
+            background: url('/wys/img/olderRest-coins.png') no-repeat 0 -0.4rem;
+            background-size: 1rem;
+            cursor: pointer;
+        }
+        .item-list{
+            position: absolute;
+            top: 0.67rem;
+            bottom: 0.61rem;
+            font-size: 0.28rem;
+            overflow-y: scroll;
+            li{
+                padding: 0.19rem 0.26rem 0.2rem 0.3rem;
+                .border(bottom);
+            }
+            h3{
+                line-height: 0.4rem;
+            }
+            dl{
+                padding-left: 0.34rem;
+            }
+            dt{
+                line-height: 0.54rem;
+                color: @fontCol*2;
+            }
+            dd{
+                .font(0.26rem,@fontCol*3);
+                .mulE(0.3rem,4);
+            }
+        }
+        .bot{
+            position: absolute;
+            bottom: 0;
+            .wh(100%,0.61rem);
+            .border(top);
+            border-radius: 0 0 0.08rem 0.08rem;
+            background: #e0e0e0;
+            font-size: 0.22rem;
+            li{
+                float: left;
+            }
+            .tel{
+                .float(left,0.1rem);
+            }
+            .email{
+                .float(right,0.1rem);
+            }
+            i{
+                float: left;
+                .wh(0.36rem,0.3rem);
+                margin: 0.16rem 0.2rem 0 0;
+                background: url('/wys/img/olderRest-coins.png') no-repeat;
+                background-position-y: -0.9rem;
+                background-size: 1rem;
+            }
+            .email i{
+                background-position-x: -0.4rem;
+            }
+        }
+    }
+    
+}
+
+/*testTool*/
+.tool-list{
+    padding: 0 0.4rem;
+    li{
+        width: 45%;
+        margin-top: 0.3rem;
+        padding: 0.4rem 0;
+        border:0.02rem solid;
+        border-radius: 0.1rem;
+    }
+    li:nth-child(2n+1){
+        float: left;
+    }
+    li:nth-child(2n){
+        float: right;
+    }
+    i{
+        display: block;
+        .wh(1rem,0.9rem);
+        margin: 0 auto 0.2rem;
+        background: url('/wys/img/testTool-coins.png') no-repeat;
+        background-size: 1.2rem;
+    }
+    h3{
+        line-height: 0.4rem;
+        text-align: center;
+    }
+}
+
+.tool-btn{
+    margin-top: 1.22rem;
+}
+
+/*psyTestIndex*/
+.test-index-main{
+    margin-top: 0.26rem;
+    padding: 0 0.2rem;
+    img{
+        width: 100%;
+    }
+}
+
+.test-index-btn{
+    margin-top: 0.77rem;
+}
+
+/*psyMsg*/
+.psy-msg-btn{
+    margin-top: 0.41rem;
+}
+
+/*psyQues*/
+.ques-list{
+    padding: 0.29rem 0.18rem 0;
+    li{
+        border:0.02rem @bdCol solid;
+        border-radius: 0.1rem;
+        margin-bottom: 0.4rem;
+    }
+    h3{
+        margin: 0 0.2rem;
+        padding-left: 0.07rem;
+        .border(bottom);
+        line-height: 0.68rem;
+    }
+    .op{
+        padding: 0 0.24rem 0.22rem;
+        .font(0.26rem,@fontCol*2);
+        .radio{
+            display: inline-block;
+            .wh(30%,0.56rem);
+            margin: 0.24rem 1% 0.02rem;
+            border:0.02rem @bdCol solid;
+            border-radius: 0.05rem;
+            text-align: center;
+        }
+        .radio:nth-child(3n+1){
+            margin-left: 0;
+        }
+        .current{
+            border-color: @spCol;
+            color: @spCol;
+        }
+    }
+    
+}
+
+/*msgConfirm*/
+.confirm-msg-list{
+    padding: 0 0.24rem;
+    margin-top: 0.24rem;
+    background: @subCol;
+    .border(top);
+    .border(bottom);
+    li{
+        width: 50%;
+        line-height: 0.78rem;
+    }
+    li:nth-child(2n+1){
+        float: left;
+    }
+    li:nth-child(2n){
+        float: right;
+    }
+    .title{
+        margin-right: 0.26rem;
+    }
+    span{
+        color: @fontCol*3;
+    }
+}
+
+.confirm-list{
+    li{
+        margin-right: 0.3rem;
+    }
+    .title{
+        width: auto;
+    }
+    span{
+        float: right;
+        color: @fontCol*3;
+    }
+    .special{
+        color: #f1a122;
+    }    
+}
+
+.appoint-msg-title{
+    margin-left: 0.3rem;
+    line-height: 0.54rem;
+    .font(0.24rem,@fontCol*3);
+}
+
+.appoint-msg-list{
+    margin-top: 0;
+    span{
+        color: #f1a122;
+    }
+}
+
+.confirm-btn{
+    margin-top: 0.31rem;
+}
